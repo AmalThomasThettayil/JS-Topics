@@ -29,9 +29,14 @@ console.log("**********************************");
 //forEach method: perform the given function once for each of the array elements
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
 arr.forEach((n, index, array) => {
     console.log(n * 2, index, array);
 })
 
-//map method of array
+//map method of array:
+
+let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let arr3 = arr2.map((n) => n * 2)
+console.log(arr3)
+
+//filter
