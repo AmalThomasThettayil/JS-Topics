@@ -54,3 +54,8 @@ console.log(arr4);
 let arr5 = arr.reduce((n, m) => n + m)
 console.log(arr5);
 
+//set:
+let arr6 = [1, 1, 1, 2, 3, 4, 5, 6, 7, 8]
+let arr7 = new Set(arr6)
+let arr8 = Array.from(arr7);
+console.log(arr8);
