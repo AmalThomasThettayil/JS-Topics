@@ -1,4 +1,4 @@
-// RECURSION
+// RECURSION: Process in which a function calls itself directly or indirectly.
 // 1)Factorial Using forloop
 
 let fact = (n) => {
@@ -25,3 +25,13 @@ let fact2 = (n) => {
 fact2(5);
 console.log(fact2(5));
 console.log("**********************************");
+
+//forEach method: perform the given function once for each of the array elements
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+arr.forEach((n, index, array) => {
+    console.log(n * 2, index, array);
+})
+
+//map method of array
