@@ -33,10 +33,24 @@ arr.forEach((n, index, array) => {
     console.log(n * 2, index, array);
 })
 
-//map method of array:
+//map method of array: creates a new array by preforming the function on each element in the array
 
 let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 let arr3 = arr2.map((n) => n * 2)
 console.log(arr3)
 
-//filter
+//filter method of array: elements in the parent array are passed through a test provided by the function(filtering) ,
+//a shallow copy of the passed elements are printed.
+// Shallow copy: keeps reference to the parent
+// Deep copy: no reference to parent
+
+let arr4 = arr.filter((n) => n > 5)
+console.log(arr4);
+
+//reduce method of array:a reducer call back function is run on each array element,
+// return value of the calculation on the preceding element is passed on to the next element,
+// finally the array is reduced to one value. 
+
+let arr5 = arr.reduce((n, m) => n + m)
+console.log(arr5);
+
